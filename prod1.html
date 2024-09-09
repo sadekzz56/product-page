@@ -3,79 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Product</title>
+    <meta name="description" content="Buy premium Coffee Espresso Machine at a special price. Fast delivery included!">
+    <title>COFFEE ESPRESSO-GTEM 15B | Special Offer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('bgcof.jpg'); /* Add your background image here */
-            background-size: cover; /* Ensure the image covers the entire background */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-image: url('bgcof.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
         }
         .container {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* Make the container slightly transparent */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         .product-image {
-            width: 80%;
+            width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
             margin-bottom: 20px;
         }
         h1 {
-            text-align: center;
+            font-size: 2.5rem;
             color: #333;
-        }
-        .product-details {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .product-details p {
-                    text-align: center;
-            font-size: 18px;
-            color: #555;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #666;
         }
         .special-price {
-            font-size: 28px;
-            color: red;
-            text-align: center;
-            font-weight: bold;
-            animation: blink 1s infinite; /* Add blinking effect */
+            font-size: 2rem;
+            color: #d9534f;
+            margin: 20px 0;
+            font-weight: 700;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+            animation: blink 1.5s infinite;
         }
         @keyframes blink {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
+            50% { opacity: 0.5; }
+        }
+        .product-specs {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .product-specs h2 {
+            font-size: 1.8rem;
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .product-specs ul {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
         }
         form {
-            display: flex;
-            flex-direction: column;
+            margin-top: 30px;
         }
         label {
-            margin-bottom: 8px;
-            font-weight: bold;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
         }
         input {
-            padding: 10px;
-            margin-bottom: 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
         }
         button {
-            padding: 10px;
+            width: 100%;
+            padding: 12px;
             background-color: #25D366;
-            color: white;
+            color: #fff;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
+            font-size: 1.2rem;
             cursor: pointer;
-            font-size: 16px;
+            transition: background-color 0.3s;
         }
         button:hover {
             background-color: #128C7E;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .special-price {
+                font-size: 1.8rem;
+            }
+            .product-specs h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -83,29 +119,17 @@
     
     <div class="container">
         <!-- Product Image Section -->
-        <img src="coffe.png" alt="Product Image" class="product-image">
+        <img src="coffe.png" alt="Coffee Espresso Machine" class="product-image">
         
-        <h1>COFFEE ESPRESSO-GTEM 15B </h1>
+        <h1>COFFEE ESPRESSO-GTEM 15B</h1>
         <div class="product-details">
             <p>ماكينة صنع القهوة الاسبريسو والكابتشينو، ماكينة صنع القهوة القابلة للبرمجة</p>
             <p class="special-price">Special Price: Only $200!</p>
             <p class="special-price">عرض خاص 200 $ يشمل التوصيل</p> 
-            <!-- Blinking special price -->
         </div>
 
-        <!-- Order Form Section -->
-        <form id="productForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
-            
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required>
-            
-            <button type="button" onclick="sendToWhatsApp()">Buy Now</button>
-               <div class="product-specs">
+        <!-- Product Specifications -->
+        <div class="product-specs">
             <h2>مواصفات المنتج:</h2>
             <ul>
                 <li>تصنيف الطاقة: 1450W</li>
@@ -128,11 +152,23 @@
                     <li>نظام Lavazza Blue</li>
                     <li>نظام Caffitaly</li>
                     <li>نظام K-cup</li>
-                    <li>يمكن تطوير أنظمة تخمير أخرى حسب الحاجة</li>
                 </ul>
                 <li>مصنوع في الصين</li>
             </ul>
         </div>
+
+        <!-- Order Form Section -->
+        <form id="productForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <button type="button" onclick="sendToWhatsApp()">Buy Now</button>
         </form>
     </div>
   
