@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #985b40;
+            padding: 0;
+            background-image: url('bgcof.jpg'); /* Add your background image here */
+            background-size: cover; /* Ensure the image covers the entire background */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Make the container slightly transparent */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product-image {
+            width: 80%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-details p {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+        .price-frame-wrapper {
+            display: flex;
+            justify-content: center; /* Centers the frame horizontally */
+            margin: 20px 0;
+        }
+		.whatsapp-button-wrapper {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin: 20px 0; /* Add some space around the button */
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button-wrapper {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin: 20px 0; /* Add some space around the button */
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Darker green for hover effect */
+}
+
+.whatsapp-icon {
+    display: inline-block;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    background-image: url('whatsapp-icon.png'); /* Replace with your WhatsApp icon image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 30px; /* Space between icon and text */
+}
+
+        .special-price {
+            font-size: 22px;
+            color: red;
+            text-align: center;
+            font-weight: bold;
+            animation: blink 1s infinite; /* Add blinking effect */
+        }
+        .discounted-price {
+            font-size: 1rem;
+            color: red; /* Highlight the discounted price in red */
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Product Image Section -->
+        <img src="coffe.png" alt="Product Image" class="product-image">
+        <div class="whatsapp-button-wrapper">
+    <a href="https://wa.me/96176878451" class="whatsapp-button" target="_blank">
+        <span class="whatsapp-icon"></span>
+        تواصل معنا عبر الواتساب
+    </a>
+</div>
+        <h1>COFFEE ESPRESSO-GTEM 15B</h1>
+        <div class="product-details">
+            <p>ماكينة صنع القهوة الاسبريسو والكابتشينو، ماكينة صنع القهوة القابلة للبرمجة</p>
+            
+            <!-- Centered Price Section with Coffee Bean Frame -->
+            <div class="price-frame-wrapper">
+                <div class="price-frame">
+				<br>
+				<br>
+                    <p class="special-price">Special Price: <del>$200</del> <span class="discounted-price">$165!</span></p>
+                    <p class="special-price">عرض خاص <del>200 $</del> <span class="discounted-price">165 $</span></p>
+                </div>
+            </div>
+        </div> 
+        <p class="special-price">التوصيل مجاني الى جميع المناطق اللبنانية</p>
+
+        <!-- Order Form Section -->
+        <form id="productForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <button type="button" onclick="sendToWhatsApp()">Buy Now</button>
+        </form>
+        
+        <div class="product-specs">
+            <h2>مواصفات المنتج:</h2>
+            <ul>
+                <li>تصنيف الطاقة: 1450W</li>
+                <li>سعة المياه: 1 لتر</li>
+                <li>خزان مياه شفاف وقابل للإزالة</li>
+                <li>مضخة بقوة 15 بار</li>
+                <li>مياه ساخنة لتنظيف الأكواب</li>
+                <li>بخار لعمل رغوة الحليب</li>
+                <li>لوحة تسخين علوية لتسخين الأكواب</li>
+                <li>لوحة تحكم بلمسة واحدة مع إضاءة</li>
+                <li>إيقاف التشغيل التلقائي / توفير الطاقة</li>
+                <li>متوافق مع:</li>
+                <ul>
+                    <li>مسحوق القهوة</li>
+                    <li>كبسولات قهوة ESE 45 مم</li>
+                    <li>نظام اسبريسو</li>
+                    <li>نظام Dolce-Gusto</li>
+                    <li>نظام Lavazza A MODO MO</li>
+                    <li>نظام Lavazza Blue</li>
+                    <li>نظام Caffitaly</li>
+                    <li>نظام K-cup</li>
+                    <li>يمكن تطوير أنظمة تخمير أخرى حسب الحاجة</li>
+                </ul>
+                <li>مصنوع في الصين</li>
+            </ul>
+        </div>
+    </div>
+  
+    <script>
+        function sendToWhatsApp() {
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('address').value;
+            const phone = document.getElementById('phone').value;
+            
+            const message = `New Order\n\nName: ${name}\nAddress: ${address}\nPhone Number: ${phone}`;
+            const whatsappNumber = '96176878451'; // Replace with your WhatsApp number
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+            
+            window.location.href = whatsappUrl;
+        }
+    </script>
+</body>
+</html>
