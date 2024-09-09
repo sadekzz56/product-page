@@ -8,6 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+			color : #985b40;
             padding: 0;
             background-image: url('bgcof.jpg'); /* Add your background image here */
             background-size: cover; /* Ensure the image covers the entire background */
@@ -40,6 +41,21 @@
             font-size: 18px;
             color: #555;
         }
+		.price-frame-wrapper {
+            display: flex;
+            justify-content: center; /* Centers the frame horizontally */
+            margin: 20px 0;
+        }
+        .price-frame {
+            padding: 20px;
+            border-radius: 15px;
+            background-image: url('coffee-beans-border.png'); /* Replace with your coffee beans image */
+            background-size: cover; /* Make the background image cover the frame */
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+        }
         .special-price {
             font-size: 28px;
             color: red;
@@ -47,6 +63,12 @@
             font-weight: bold;
             animation: blink 1s infinite; /* Add blinking effect */
         }
+		.discounted-price {
+    font-size: 2rem;
+    color: red; /* Highlight the discounted price in red */
+    font-weight: bold;
+    margin-left: 10px;
+}
         @keyframes blink {
             0%, 100% { opacity: 1; }
             50% { opacity: 0; }
@@ -88,10 +110,22 @@
         <h1>COFFEE ESPRESSO-GTEM 15B </h1>
         <div class="product-details">
             <p>ماكينة صنع القهوة الاسبريسو والكابتشينو، ماكينة صنع القهوة القابلة للبرمجة</p>
-            <p class="special-price">Special Price: Only $200!</p>
-            <p class="special-price">عرض خاص 200 $ يشمل التوصيل</p> 
+             <!-- Centered Price Section -->
+            
+            <!-- Centered Price Section with Coffee Bean Frame -->
+            <div class="price-frame-wrapper">
+                <div class="price-frame">
+				<br>
+				<br>
+                   <p class="special-price">Special Price: <del>$200</del> <span class="discounted-price">$165!</span></p>
+<p class="special-price">عرض خاص <del>200 $</del> <span class="discounted-price">$ 165</span> </p>
+<p class="special-price">التوصيل مجاني الى جميع المناطق اللبنانية</p>
+
+ 
+                </div>
+            </div>
+        </div> 
             <!-- Blinking special price -->
-        </div>
 
         <!-- Order Form Section -->
         <form id="productForm">
@@ -117,7 +151,6 @@
                 <li>لوحة تسخين علوية لتسخين الأكواب</li>
                 <li>لوحة تحكم بلمسة واحدة مع إضاءة</li>
                 <li>إيقاف التشغيل التلقائي / توفير الطاقة</li>
-                <li>مصنوع في تركيا - ELA</li>
                 <li>متوافق مع:</li>
                 <ul>
                     <li>مسحوق القهوة</li>
