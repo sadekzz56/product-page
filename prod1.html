@@ -46,25 +46,68 @@
             justify-content: center; /* Centers the frame horizontally */
             margin: 20px 0;
         }
-        .price-frame {
-            padding: 20px;
-            border-radius: 15px;
-            background-image: url('coffee-beans-border.png'); /* Replace with your coffee beans image */
-            background-size: cover; /* Make the background image cover the frame */
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            text-align: center;
-            width: 80%;
-            max-width: 400px;
-        }
+		.whatsapp-button-wrapper {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin: 20px 0; /* Add some space around the button */
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button-wrapper {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin: 20px 0; /* Add some space around the button */
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Darker green for hover effect */
+}
+
+.whatsapp-icon {
+    display: inline-block;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    background-image: url('whatsapp-icon.png'); /* Replace with your WhatsApp icon image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 30px; /* Space between icon and text */
+}
+
         .special-price {
-            font-size: 25px;
+            font-size: 22px;
             color: red;
             text-align: center;
             font-weight: bold;
             animation: blink 1s infinite; /* Add blinking effect */
         }
         .discounted-price {
-            font-size: 2rem;
+            font-size: 1rem;
             color: red; /* Highlight the discounted price in red */
             font-weight: bold;
             margin-left: 10px;
@@ -106,7 +149,12 @@
     <div class="container">
         <!-- Product Image Section -->
         <img src="coffe.png" alt="Product Image" class="product-image">
-        
+        <div class="whatsapp-button-wrapper">
+    <a href="https://wa.me/96176878451" class="whatsapp-button" target="_blank">
+        <span class="whatsapp-icon"></span>
+        تواصل معنا عبر الواتساب
+    </a>
+</div>
         <h1>COFFEE ESPRESSO-GTEM 15B</h1>
         <div class="product-details">
             <p>ماكينة صنع القهوة الاسبريسو والكابتشينو، ماكينة صنع القهوة القابلة للبرمجة</p>
@@ -114,9 +162,10 @@
             <!-- Centered Price Section with Coffee Bean Frame -->
             <div class="price-frame-wrapper">
                 <div class="price-frame">
-                <br>
 				<br>
-                    <p class="special-price">Special Price: <del>$200</del> <span class="discounted-price">165$ </span></p>
+				<br>
+                    <p class="special-price">Special Price: <del>$200</del> <span class="discounted-price">$165!</span></p>
+                    <p class="special-price">عرض خاص <del>200 $</del> <span class="discounted-price">165 $</span></p>
                 </div>
             </div>
         </div> 
